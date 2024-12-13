@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Video Player</title>
+  <link rel="stylesheet" href="https://vjs.zencdn.net/7.20.3/video-js.css">
+  <style>
+    .popup {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+    }
+    .popup a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <video id="live-video" class="video-js" controls preload="auto" width="640" height="360" data-setup="{}">
+    <source src="http://185.114.147.215:8080/live/nmr71190@gmail.com/MTSLk7YP42/856815.m3u8?token=HRtYUkpaEAMVAlEHU11ZWgMADFZaCwMCBgRQUAlVW1ZeXwYECVYFCAATTRAXTUoGVFxrXQYaClkGAg1TDE9BQBVcQmxQVhADFQNXBFYNGk8XRV1ZBxoKUR8WRQtdQVlbE1VcHxtXSk1SQw9TCGZcBkNYV1FAAl4UX1gZQFYNPFEDVFFdXRAIGwYTTRANSkhBD19BWA4UEgNaQEcDTQZBDwhMXF8VEFFWQl8VQB0bAkF8fxYYQF1IFVZaRgtWDUEPRFQDRgEQHhteQj5AAUpMEVBQWVEQGgpDAxYZQFQCG2oFVl5dXFFGUFhfEhBeGwlBGRNZWwxRRA5Ba0ULXUFZWxNVXE4=" type="application/x-mpegURL">
+    Your browser does not support the video tag.
+  </video>
+  <div class="popup">
+    Join our Telegram for more live updates: <a href="https://t.me/stmpupclips" target="_blank">@YOUR_CHANNEL</a>
+  </div>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+</body>
+</html>
